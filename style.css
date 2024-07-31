@@ -84,7 +84,7 @@ body {
 }
 .search-bar {
   display: flex;
-  width:100%
+  width: 100%;
   max-width: 584px;
   transition: box-shadow 0.15s;
   padding-right: 8px;
