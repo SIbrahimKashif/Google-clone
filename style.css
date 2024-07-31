@@ -1,64 +1,61 @@
 * {
   font-family: arial, sans-serif;
   font-size: 14px;
-  color:white;
+  color: white;
   margin: 0px;
   padding: 0px;
 }
 body {
   background-color: #202124;
-  overflow:hidden;
+  overflow: hidden;
+  padding: 0px 20px;
 }
 .nav {
   display: flex;
   justify-content: right;
   align-items: center;
+  gap: 14px;
   width: 100%;
-  height: 48px;
-  padding-top:6px;
-  padding-bottom:6px;
-  <!-- background-color: lightblue; -->
+  padding: 10px 0px;
 }
 .nav-links {
-  display:flex;
+  display: flex;
   align-items: center;
-  <!-- background-color: orange; -->
+  gap: 15px;
 }
 .nav-link {
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
-}
-#gmail{
-  margin-right: 15px;
 }
 .nav-link:hover {
   text-decoration: underline;
 }
 .nav-icons {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 14px;
-  margin-right: 14px;
 }
-.search-labs-container,.google-apps-container {
+.search-labs-container,
+.google-apps-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width:40px;
-  height:40px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   transition: background-color 0.3s;
 }
 .search-labs-container {
   margin-right: 12px;
 }
-.search-labs,.google-apps {
-  width:24px;
+.search-labs,
+.google-apps {
+  width: 24px;
 }
-.search-labs-container:hover,.google-apps-container:hover {
+.search-labs-container:hover,
+.google-apps-container:hover {
   background-color: rgba(255, 255, 255, 0.07);
-  cursor:pointer;
+  cursor: pointer;
 }
 .user-pfp-container {
   width: 40px;
@@ -69,7 +66,7 @@ body {
   /* background-color: lightgreen; */
 }
 .user-pfp {
-  width:32px;
+  width: 32px;
   border-radius: 50%;
   border: 4px solid transparent;
   transition: border 0.3s;
@@ -78,65 +75,64 @@ body {
   cursor: pointer;
   border: 4px solid rgba(255, 255, 255, 0.1);
 }
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 26px;
-}
 .google-logo {
   width: 272px;
-  }
-.search-bar-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-  }
+  margin-bottom: 26px;
+  display: block;
+  margin-inline: auto;
+  margin-top: 18vh;
+}
 .search-bar {
   display: flex;
-  width: 584px;
+  width:100%
+  max-width: 584px;
   transition: box-shadow 0.15s;
   padding-right: 8px;
   border: 1px solid #5f6368;
   border-radius: 40px;
   box-sizing: border-box;
   background-color: #202124;
-  }
+  margin-bottom: 18px;
+  margin-inline: auto;
+}
 .search {
-  all:unset;
-  display:flex;
+  all: unset;
+  display: flex;
   width: 100%;
-  color:white;
+  color: white;
   padding-top: 11px;
   padding-bottom: 8px;
 }
 .search-bar:hover {
-  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.15);
   background-color: #303134;
   border: 1px solid #303134;
 }
-.search-icon-container,.voice-icon-container,.image-search-container {
-  display:flex;
+.search-icon-container,
+.voice-icon-container,
+.image-search-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height:48px;
+  height: 48px;
   width: 48px;
   /* background-color: green; */
-  }
+}
 .search-icon {
   width: 20px;
-  margin-left:14px;
-  margin-right:14px;
-  }
-.voice-icon,.image-search {
-  width:24px;
-  margin-left:8px;
-  margin-right:8px;
-  }
-.voice-icon-container:hover,.image-search-container:hover {
-  cursor:pointer
-  }
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.voice-icon,
+.image-search {
+  width: 24px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.voice-icon-container:hover,
+.image-search-container:hover {
+  cursor: pointer;
+}
 .buttons-container {
   display: flex;
   justify-content: center;
@@ -144,10 +140,10 @@ body {
 }
 .button {
   background-color: #303134;
-  padding:8px 15px 8px 15px;
-  margin:11px 4px 11px 4px;
+  padding: 8px 15px 8px 15px;
+  margin: 11px 4px 11px 4px;
   border-radius: 4px;
-  border: 0.67px solid rgba(95, 99, 104,0);
+  border: 0.67px solid rgba(95, 99, 104, 0);
   box-sizing: border-box;
   transition: border 0.15s;
 }
@@ -157,29 +153,16 @@ body {
 }
 .offered-in-container {
   text-align: center;
-  display:block;
+  display: block;
   font-size: 13px;
-  color:#bfbfbf;
+  color: #bfbfbf;
   margin-top: 14px;
 }
 .offered-in-lang {
-  display:inline-block;
-  color:#99c3ff;
+  display: inline-block;
+  color: #99c3ff;
 }
 .offered-in-lang:hover {
   text-decoration: underline;
-  cursor:pointer
-}
-footer {
-  color:white;
-  position:absolute;
-  bottom: 0;
-  padding: 15px;
-  width:100vw;
-  background-color: #171717;
-}
-.footer-text {
-}
-.footer-text:hover {
-  text-decoration: underline;
+  cursor: pointer;
 }
